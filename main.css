@@ -1,0 +1,13 @@
+.boxbodyyuh {
+    border-radius: 1%;
+    width: 66%;
+    padding: 10px;
+    background-color: rgb(23, 23, 23);
+    border: 1px solid transparent;
+    margin: 5% 17% auto 17%;
+    box-shadow: 0px 0px 29px 10px rgba(226, 44, 153,0.1);
+  }
+
+a:hover { 
+    cursor:pointer;  
+}
