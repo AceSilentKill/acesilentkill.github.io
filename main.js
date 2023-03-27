@@ -1,4 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const log = document.getElementByID('log');
+  const log = document.getElementById('log');
   console.log(log);
 });
