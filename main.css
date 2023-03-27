@@ -60,7 +60,7 @@ a:hover {
 .butt{
   padding: 0.8em 3em;
   background: rgb(16 16 16);
-  user-select: text;
+  user-select: none;
 }
 .butt:hover {
   background: #2a2a2a;
@@ -75,7 +75,7 @@ a:hover {
 #log {
   resize: vertical;
   cursor: pointer;
-  user-select: text;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
