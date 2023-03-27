@@ -53,6 +53,6 @@ window.downloadClient = function () {
             default:
                 break;
         }
-        return `PC7-${plat}${port}${window.latestVersion}${arch}.${ext}`;
+        return `PC7-${plat}${port}-${window.latestVersion}${arch}.${ext}`;
     }
 }
