@@ -3,40 +3,53 @@
   src: url(Montserrat-Light.ttf);
 }
 
+:root {
+  --r1: #781212;
+  --r2: #ff0505;
+  --b1: #090909;
+  --b2: #171717;
+  --b3: #2a2a2a;
+  --g1: #4a4a4a;
+  --g2: #8c8c8c;
+  --e1: rgba(225, 5, 5, 0.15);
+}
+
 .boxbody {
-    border-radius: 1%;
-    width: 66%;
-    padding: 10px;
-    background-color: rgb(23, 23, 23);
-    border: 1px solid transparent;
-    margin: 5% 17% auto 17%;
-    box-shadow: 0px 0px 29px 10px rgba(225, 5, 5, 0.15);
+  border-radius: 1%;
+  width: 66%;
+  padding: 10px;
+  background-color: var(--b2);
+  border: 1px solid transparent;
+  margin: 5% 17% auto 17%;
+  box-shadow: 0px 0px 22px 2px var(--b1);
 }
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 #container > h2 {
-    color: white;
-    text-shadow: 2px 0 0 #781212, -1px 0 0 #781212, 0 1px 0 #781212, 0 -1px 0 #781212, 0.5px 0.5px #781212, -0.5px -0.5px 0 #781212, 0.5px -0.5px 0 #781212, -0.5px 0.5px 0 #590d39;
-    font-family: customF;
-    margin: 0% 2% 0% 2%;
-
+  color: white;
+  text-shadow: 2px 0 0 var(--r1), -1px 0 0 var(--r1), 0 1px 0 var(--r1),
+    0 -1px 0 var(--r1), 0.5px 0.5px var(--r1), -0.5px -0.5px 0 var(--r1),
+    0.5px -0.5px 0 var(--r1), -0.5px 0.5px 0 var(--r1);
+  font-family: customF;
+  margin: 0% 2% 0% 2%;
 }
 #container > h3 {
-    color: white;
-    text-shadow: 2px 0 0 #ff0505, -2px 0 0 #ff0505, 0 2px 0 #ff0505, 0 -2px 0 #ff0505, 1px 1px #ff0505, -1px -1px 0 #ff0505, 1px -1px 0 #ff0505, -1px 1px 0 #ff0505;
-    font-size: 42px;
-    font-family: customF;
-    margin: 1% 2% 0% 2%;
-    text-align: center;
+  color: white;
+  text-shadow: 2px 0 0 var(--r2), -2px 0 0 var(--r2), 0 2px 0 var(--r2),
+    0 -2px 0 var(--r2), 1px 1px var(--r2), -1px -1px 0 var(--r2),
+    1px -1px 0 var(--r2), -1px 1px 0 var(--r2);
+  font-size: 42px;
+  font-family: customF;
+  margin: 1% 2% 0% 2%;
+  text-align: center;
 }
 #container > h4 {
-    color: #090909;
-    font-family: customF;
-    margin: 4% 2% 0% 2%;
-    text-align: center;
+  color: var(--b1);
+  font-family: customF;
+  margin: 4% 2% 0% 2%;
+  text-align: center;
 }
-
 
 .container {
   display: flex;
@@ -44,7 +57,7 @@ a:hover {
 .container.space-around {
   justify-content: space-around;
 }
-.container.space-between {  
+.container.space-between {
   justify-content: space-between;
 }
 
@@ -57,15 +70,15 @@ a:hover {
 .sep30 {
   margin-top: 30px;
 }
-.butt{
+.butt {
   width: 20%;
   padding: 2% 5%;
-  background: rgb(16 16 16);
+  background: var(--b1);
   user-select: none;
 }
 .butt:hover {
-  background: #2a2a2a;
-  transform: scaleX(1.05) scaleY(1.1)
+  background: var(--b3);
+  transform: scaleX(1.02) scaleY(1.08);
 }
 .hide {
   visibility: hidden !important;
@@ -80,24 +93,41 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(0, 0, 0);
+  background-color: var(--b1);
 }
 
 ::-webkit-scrollbar-track-piece {
-    background-color: rgb(74, 74, 74);
+  background-color: var(--g1);
 }
 
 ::-webkit-scrollbar-thumb {
-    height: 25%;
-    background-color: rgb(140, 140, 140);
+  height: 25%;
+  background-color: var(--g2);
 }
 
 ::-webkit-scrollbar-corner {
-    background-color: rgb(0, 0, 0);
+  background-color: var(--b1);
 }
 
+body {
+  background: linear-gradient(132deg, #ec5218, #1665c1);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 30s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
