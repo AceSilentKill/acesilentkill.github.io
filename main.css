@@ -77,3 +77,25 @@ a:hover {
   cursor: pointer;
   user-select: text;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgb(74, 74, 74);
+}
+
+::-webkit-scrollbar-thumb {
+    height: 25%;
+    background-color: rgb(140, 140, 140);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgb(0, 0, 0);
+}
