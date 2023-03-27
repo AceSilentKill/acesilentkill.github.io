@@ -30,7 +30,7 @@ window.downloadClient = function () {
     pushLog(fileName);
     a(getDownloadURL());
 
-    function a(url) { let sneakyLink = document.createElement('a'); sneakyLink.href = url; sneakyLink.target = '_blank'; sneakyLink.click() }
+    function a(url) { let sneakyLink = document.createElement('a'); sneakyLink.href = url; sneakyLink.click() }
     function pushLog(str) { log.textContent = str; log.scrollTop = log.scrollHeight; }
     function getFileName() {
         let plat = jscd.os.includes('Win') ? "win" : (jscd.os.includes('Mac') ? "mac" : "linux");
