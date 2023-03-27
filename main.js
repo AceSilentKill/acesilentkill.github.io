@@ -9,7 +9,7 @@ window.downloadClient = function () {
   const log = document.getElementById('log');
   let fileName = "PC7-" + (jscd.os.includes('Win') ? "win-setup/" : jscd.os.includes('Mac') ? "mac-" : "linux-") + "portable-6.X.X-" + (jscd.x64 ? "x64" : "ia32");
 
-  log.classList.remove('hide');
+  log.parentElement.classList.remove('hide');
   pushLog(fileName);
 
   function pushLog(str) { log.textContent += `\n${str}`; }
