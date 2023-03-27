@@ -1,2 +1,2 @@
-Site for PC7 Client :D\
+:D\
 https://acesilentkill.github.io/
