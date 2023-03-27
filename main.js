@@ -12,6 +12,6 @@ window.downloadClient = function () {
   log.parentElement.parentElement.classList.remove('hide');
   pushLog(fileName);
 
-  function pushLog(str) { log.textContent += `\n${str}`; }
+  function pushLog(str) { log.textContent += `\n${str}`; log.scrollTop = log.scrollHeight; }
   function clearLog() { log.textContent = ''; }
 }
